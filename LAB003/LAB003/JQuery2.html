@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <button class="esconder">Esconder</button>
+    <input type="button" value="Mostrar" id="mostrar" />
+    <button class="esconde_mostra">Faz os 2</button>
+    <div id="msg">
+        <h1>JQUERY É VIDA!!!</h1>
+    </div>
+    
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $(".esconder").click(function () {
+                $("#msg").hide();
+            });
+
+            $("#mostrar").click(function () {
+                $("#msg").show();
+            });
+
+            $(".esconde_mostra").click(function () {
+                $("#msg").toggle();
+            });
+        });
+        
+    </script>
+</body>
+</html>
