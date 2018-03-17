@@ -1,0 +1,5 @@
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB001\HtmlTags\bin\HtmlTags.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB001\HtmlTags\bin\HtmlTags.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB001\HtmlTags\obj\Debug\HtmlTags.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB001\HtmlTags\obj\Debug\HtmlTags.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB001\HtmlTags\obj\Debug\HtmlTags.pdb
