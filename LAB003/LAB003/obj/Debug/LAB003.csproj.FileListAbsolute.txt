@@ -3,3 +3,8 @@ C:\dev\LAB003\LAB003\bin\LAB003.pdb
 C:\dev\LAB003\LAB003\obj\Debug\LAB003.csprojResolveAssemblyReference.cache
 C:\dev\LAB003\LAB003\obj\Debug\LAB003.dll
 C:\dev\LAB003\LAB003\obj\Debug\LAB003.pdb
+C:\dev\20480\LAB003\LAB003\bin\LAB003.dll
+C:\dev\20480\LAB003\LAB003\bin\LAB003.pdb
+C:\dev\20480\LAB003\LAB003\obj\Debug\LAB003.csprojResolveAssemblyReference.cache
+C:\dev\20480\LAB003\LAB003\obj\Debug\LAB003.dll
+C:\dev\20480\LAB003\LAB003\obj\Debug\LAB003.pdb
