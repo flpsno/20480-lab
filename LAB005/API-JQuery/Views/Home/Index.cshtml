@@ -1,0 +1,51 @@
+﻿<input type="text" id="time" />
+<input type="button" id="buscar" />
+<ul id="times">
+
+</ul>
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        buscarTodos();
+        $("#buscar").click(function() {
+            var time = $("#time").val();
+            $("ul").empty();
+            if (time == "") {
+                buscarTodos()
+            } else {
+                buscarTime(time);
+            }
+
+        })
+    });
+
+    function buscarTime(time) {
+        $.ajax({
+            url: "/api/values/"+time,
+            type: "GET",
+            contentType: "application/json"
+        }).done(function (data) {
+
+           
+            $("ul").append("<li>" + data + "</li>");
+           
+        });
+    }
+
+
+    function buscarTodos() {
+        $.ajax({
+            url: "/api/values",
+            type: "GET",
+            contentType: "application/json"
+        }).done(function (data) {
+            
+            $(data).each(function (ind, val) {
+                $("ul").append("<li>" + val + "</li>");
+            })
+        });
+    }
+
+
+</script>

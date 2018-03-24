@@ -1,0 +1,47 @@
+﻿<h2>Cadastro</h2>
+<form method="post">
+    <select name="estadio" required id="estadio">
+        <optgroup label="São Paulo">
+            <option value="Morumbi">Morumbi</option>
+            <option value="Itaquera">Itaquera</option>
+            <option value="Alianz Parque">Alianz Parque</option>
+        </optgroup>
+        <optgroup label="Minas">
+            <option value="Mineirão">Mineirão</option>
+            <option value="Horto">Horto</option>
+        </optgroup>
+    </select>
+    <br />
+    <input name="data" required type="date" id="dataHora" placeholder="Data" />
+    <br />
+    <input name="mandante" required type="text" id="timeA" placeholder="Mandante" />
+    <br />
+    <input name="visitante" required type="text" id="timeB" placeholder="Visitante" />
+
+    <button id="insert" type="button">Salvar</button>
+</form>
+
+<script src="~/Scripts/jquery-1.7.1.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#insert").click(function () {
+            var data = $("#dataHora").val();
+            var timeA = $("#timeA").val();
+            var timeB = $("#timeB").val();
+            var estadio = $("#estadio").val();
+            
+            var parametro = {
+                Data: data,
+                TimeA: timeA,
+                TimeB: timeB,
+                Local: estadio
+            };
+            $.post("/api/Values", parametro, function(){
+                alert('Sucesso');
+            }).fail(function () {
+                alert('Erros');
+            })
+
+        });
+    });
+</script>
