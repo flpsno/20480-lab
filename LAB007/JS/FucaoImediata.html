@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <button onclick="soma(1, 1)">SOMA</button>
+    <button onclick="sub(4, 2)">SUB</button>
+
+    <script>
+        var soma = function (num1, num2) {
+            alert(num1 + num2);
+            return (num1 + num2);
+        }
+
+        var somados = soma(20, 10);
+
+        var sub = function (num1, num2) {
+            alert(num1 - num2);
+            return (num1 - num2);
+        }
+
+        var subtraidos = sub(somados, 10);
+
+        alert(subtraidos);
+    </script>
+</body>
+</html>

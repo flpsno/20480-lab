@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+        var parses = {
+
+            int: function () {
+                alert(10 + parseInt("10"));
+            },
+
+            float: function () {
+                alert(parseFloat(Math.PI + 0.76).toFixed(4));
+            }
+        }
+
+        parses.int();
+        parses.float();
+        alert(isNaN(10));
+    </script>
+
+</body>
+</html>

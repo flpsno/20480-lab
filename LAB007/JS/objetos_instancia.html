@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+        var pedido = function (email, sessionId) {
+            this.Email = email;
+            this.Id = sessionId;
+            this.Itens = [];
+        };
+
+        pedido.prototype.Cupom = function (numero) {
+            return numero;
+        };
+
+        var pedidoNovo = new pedido("flspno@hotmail.com", 1);
+        pedidoNovo.Itens.push({
+            nome: "relogio MK Golden",
+            preco: 150,
+            cor: "dourado"
+        });
+
+        pedidoNovo.Itens.push({
+            nome: "relogio palmeiras mundial",
+            preco: 50,
+            cor: "transparente"
+        });
+
+        document.writeln(JSON.stringify(pedidoNovo));
+
+        var pedido2 = new pedido("santos.felipe@outlook.com", 2)
+        pedido2.Itens.push({
+            nome: "relogio KASolution",
+            preco: 159.99,
+            cor: "azul e preto"
+        });
+
+        document.writeln("<br>");
+        document.writeln(JSON.stringify(pedido2));
+
+    </script>
+
+</body>
+</html>

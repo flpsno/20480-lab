@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button onclick="matematicas.soma(1, 1)">SOMA</button>
+
+    <script>
+        var matematicas = {
+            numero: 1,
+            soma: function (numero1, numero2) {
+                return numero1 + numero2;
+            },
+
+            sub: function (numero1, numero2) {
+                return numero1 - numero2;
+            }
+        };
+
+        var estatisticas = {
+            media: function (numero1, numero2) {
+                return (numero1, numero2) / 2;
+            },
+
+            potencia: function (numero1, numero2) {
+                return Math.pow(numero1, numero2);
+            }
+        }
+    </script>
+
+</body>
+</html>

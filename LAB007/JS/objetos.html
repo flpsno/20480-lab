@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <script>
+
+        var objetoMulher = {};
+        objetoMulher.CorCabelo = "Loiro";
+        objetoMulher.Altura = 1.65;
+        objetoMulher.Peso = "50kg";
+
+        //document.writeln(objetoMulher.Peso);
+
+        var jsonObj = JSON.stringify(objetoMulher);
+        document.writeln(jsonObj);
+
+        var objeto2 = JSON.parse(jsonObj);
+        document.writeln(objeto2.Altura);
+
+
+    </script>
+</body>
+</html>
