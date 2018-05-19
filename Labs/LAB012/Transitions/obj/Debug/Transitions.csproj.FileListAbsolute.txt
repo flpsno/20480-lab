@@ -1,0 +1,5 @@
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB012\Transitions\bin\Transitions.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB012\Transitions\bin\Transitions.pdb
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB012\Transitions\obj\Debug\Transitions.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB012\Transitions\obj\Debug\Transitions.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB012\Transitions\obj\Debug\Transitions.pdb

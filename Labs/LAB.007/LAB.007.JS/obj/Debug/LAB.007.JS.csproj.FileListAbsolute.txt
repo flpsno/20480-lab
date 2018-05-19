@@ -1,0 +1,5 @@
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB.007\LAB.007.JS\bin\LAB.007.JS.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB.007\LAB.007.JS\bin\LAB.007.JS.pdb
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB.007\LAB.007.JS\obj\Debug\LAB.007.JS.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB.007\LAB.007.JS\obj\Debug\LAB.007.JS.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB.007\LAB.007.JS\obj\Debug\LAB.007.JS.pdb

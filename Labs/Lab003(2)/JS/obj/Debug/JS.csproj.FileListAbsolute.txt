@@ -1,0 +1,5 @@
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\Lab003\JS\bin\JS.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\Lab003\JS\bin\JS.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\Lab003\JS\obj\Debug\JS.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\Lab003\JS\obj\Debug\JS.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\Lab003\JS\obj\Debug\JS.pdb

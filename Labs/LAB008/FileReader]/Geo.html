@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <script>
+        var url = "http://maps.google.com/maps?q=";
+
+        var accuracy = {
+            enableHighAccuracy: true,
+            timeout: 5000,
+            speed: true
+        };
+
+        function ok(coords) {
+            var latitude = coords.coords.latitude;
+            var longitude = coords.coords.longitude;
+            var dist = coords.coords.accuracy;
+
+            document.writeln(latitude);
+            document.writeln("<br>");
+            document.writeln(longitude);
+            document.writeln("<br>");
+            document.writeln((parseInt(dist / 1000)));
+
+           // location.href = url + latitude + "," + longitude;
+        }
+
+        function erro(err) {
+            console.error('ERROR:' + err.message);
+        }
+
+        //navigator.geolocation.getCurrentPosition(ok, erro, accuracy);
+        navigator.geolocation.getCurrentPosition(ok, erro);
+
+    </script>
+
+    
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+   
+    //Variaveis
+    var nomeCompleto = 10;// = "Fulano de Tal";
+    
+    //Comparações
+    if (nomeCompleto)//=== COMPARAR AS DUAS FORMAS undefined x null
+        document.writeln(nomeCompleto);
+    else
+        document.writeln('TESTE');
+
+    //tipos
+    var numero = 10;
+    var boleano = true;
+    var texto = "10";
+
+    //==     Comparativo de equalidade de valores
+    //===    Comparativo de equalidade de valores e Tipo
+    //!==    Diferente de equalidade de valores e Tipo
+    //==     Diferente de equalidade de valores
+    // >=    Maior ou igual
+    // <=    Menor ou igual
+    if (numero !== texto)
+        alert("Verdadeiro");
+    else
+        alert("false");
+    
+    function somarNumeros(numero1, numero2) {
+        
+        return numero1 + numero2
+    }
+    //--- ------------------
+    //Função Imediata
+    //--- ------------------
+    var retornoFuncao = function () {
+        return 10;
+    }
+
+    var retorno = somarNumeros(20, 24);
+
+    document.write(retorno);
+
+</script>
+
+    <script>
+      // var nomeCompleto = 22;
+
+    </script>
+</body>
+</html>

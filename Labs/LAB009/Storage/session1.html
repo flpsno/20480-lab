@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <a href="session2.html">Pagina 2</a>
+
+    <script>
+        var cadastro = {
+            Nome: "Henrique Souza",
+            Idade: 23,
+            Sexo: "Masculino",
+            Endereco: {
+                Rua: "Macieira, 80",
+                Cidade: "Osasco",
+                Estado: "São Paulo"
+            },
+            Telefone: [
+                {
+                    Tipo: "Fixo",
+                    Operadora: "Não Tem",
+                    Numero: "Não Tem"
+                },
+                {
+                    Tipo: "Celular",
+                    Operadora: "Vivo",
+                    Numero: "(11)9121-2456"
+                },
+            ],
+            RendaFamiliar: {
+                Min: 2000,
+                Max: 3500
+            }
+        }
+
+        //sessionStorage.setItem("Cadastro", JSON.stringify(cadastro));
+        localStorage.setItem("Cadastro", JSON.stringify(cadastro));
+
+    </script>
+</body>
+</html>

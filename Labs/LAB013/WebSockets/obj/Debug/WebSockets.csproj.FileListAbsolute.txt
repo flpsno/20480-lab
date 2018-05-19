@@ -1,0 +1,5 @@
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB013\WebSockets\bin\WebSockets.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB013\WebSockets\bin\WebSockets.pdb
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB013\WebSockets\obj\Debug\WebSockets.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB013\WebSockets\obj\Debug\WebSockets.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB013\WebSockets\obj\Debug\WebSockets.pdb

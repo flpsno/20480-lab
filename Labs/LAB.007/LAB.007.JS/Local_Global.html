@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+
+    <button onclick="soma()">SOMA</button>
+    <button onclick="showNumero()">NUMERO</button>
+
+    <script>
+        debugger;
+        "use strict";
+        var numero = 7;//Global
+        
+        function soma() {
+            numero = new Date().getSeconds();
+            alert(numero); //
+        }
+
+        function div() {
+            var numero = 7; // Local
+            alert(numero / 2);//3.5 ou 12.5
+        }
+
+
+    </script>
+    <script>
+        debugger;
+        "use strict";
+        var numero = 25;//Global
+
+        function showNumero() {
+            alert(numero);
+        }
+    </script>
+</body>
+</html>

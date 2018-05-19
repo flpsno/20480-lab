@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <button class="esconder">Esconder</button>
+    
+    <input type="button" value="Mostrar" id="mostrar" />
+    
+    <button class="mostra_esconde">faz os 2</button>
+
+    <div id="msg"><h1>JQUERY É VIDA !!!!</h1></div>
+    <h1>NUNCA SOME</h1>
+     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".esconder").click(function () {
+                $("#msg").hide();
+            })
+
+            $("#mostrar").click(function () {
+                $("#msg").show();
+            });
+           
+            $(".mostra_esconde").click(function () {
+                $("#msg").toggle();
+            })
+
+
+        });
+    </script>
+
+</body>
+</html>

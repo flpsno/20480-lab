@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <video id="video" controls="controls" poster="http://cdn01.cdn.justjared.com/wp-content/uploads/headlines/2015/09/ronda-rousey-patrick-swayze-road-house-role.jpg">
+        <source src="big_buck_bunny.mp4"  type="video/mp4" />
+        <p>Descule</p>
+    </video>
+
+    <script>
+        var onLoad = function () {
+            'use strict'
+
+            var hidden = "webkitHidden";
+            var statusChange = "webkitvisibilitychange";
+
+            var getVideo = document.getElementById("video");
+
+            function changeStatus() {
+                if (document[hidden]) {
+                    getVideo.pause();
+                } else {
+                    getVideo.play();
+                }
+            }
+            document.addEventListener(statusChange, changeStatus, false);
+
+            getVideo.addEventListener('pause', function () {
+                document.title = "!! PAUSADO !!";
+            });
+
+            getVideo.addEventListener('play', function () {
+                document.title = "!! VALENDO !!" + getVideo.duration;
+                
+            });
+
+
+        }();
+
+
+    </script>
+</body>
+</html>

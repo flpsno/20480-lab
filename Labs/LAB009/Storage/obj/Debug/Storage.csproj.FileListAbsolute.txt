@@ -1,0 +1,5 @@
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB009\Storage\bin\Storage.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB009\Storage\bin\Storage.pdb
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB009\Storage\obj\Debug\Storage.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB009\Storage\obj\Debug\Storage.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB009\Storage\obj\Debug\Storage.pdb

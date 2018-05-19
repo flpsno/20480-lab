@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .dashed {
+            border:2px dashed #ddd;
+            position: relative;
+        }
+
+            .dashed > * {
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+            }
+
+        div {
+            margin-top: 20px;
+            height: 330px;
+            width:330px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="total">0</h1>
+
+    <div id="a" class="dashed" ondragover="dragOver(event)" ondrop="drop(event)" >
+        <h1> A </h1>
+        <img draggable="true"
+            id="img" 
+            ondragstart="drag(event)"
+            src="http://cdn01.cdn.justjared.com/wp-content/uploads/headlines/2015/09/ronda-rousey-patrick-swayze-road-house-role.jpg" />
+    </div>
+    <div id="b" ondragover="dragOver(event)" ondragenter="enter(event)" ondrop="drop(event)" class="dashed">
+        <h1> B </h1>
+    </div>
+    <script>
+
+        function enter(evento) {
+           
+        }
+
+        function dragOver(eventoDragOver) {
+            eventoDragOver.preventDefault();
+        }
+
+        function drop(eventoDrop) {
+            eventoDrop.preventDefault();
+            var idElemento = eventoDrop.dataTransfer.getData("imagem");
+            var elemento = document.getElementById(idElemento);
+
+            if (eventoDrop.target.tagName == "DIV") {
+                eventoDrop.target.appendChild(elemento);
+            } else {
+                eventoDrop.target.parentElement.appendChild(elemento);
+            }
+
+            if (eventoDrop.target.id == "b") {
+                var total = parseInt(document.getElementById('total').innerText);
+                document.getElementById('total').innerText = ++total;
+            }
+
+        }
+
+        function drag(eventoDrag) {
+            eventoDrag.dataTransfer.setData("imagem", eventoDrag.target.id);
+        }
+
+    </script>
+
+</body>
+</html>

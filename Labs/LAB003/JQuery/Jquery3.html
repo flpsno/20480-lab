@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        .bordas {
+            border: 1px #000 solid;
+        }
+
+        .verde{
+            background-color: green;
+        }
+
+        .vermelho{
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" id="txtNome" />
+    <h1>03/03/1981</h1>
+    <p>São Paulo / SP</p>
+    <input type="button" value="Mostrar Dados" id="mostrarDados"/>
+
+    <table class="bordas">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Dt. Nascimento</th>
+                <th>Local Nascimento</th>
+            </tr>
+        </thead>
+        <tbody id="tabela">
+            <tr>
+                <td id="nome"></td>
+                <td id="dtNasc"></td>
+                <td id="localNasc"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#mostrarDados").click(function () {
+                var nome = $("#txtNome").val();//-- .val() em caso de elementos <input>.
+                var nasc = $("h1").html();//--.html() todos elementos exceto <p> <input>
+                var local = $("p").text();//--.text() todos elementos <p>
+
+                $("#nome").html(nome);
+                $("#dtNasc").html(nasc);
+                $("#localNasc").html(local);
+                
+                var cor = "verde"
+                if (nome.substr(0, 1) == "T") {
+                    cor = "vermelho";
+                }
+
+                var linha = "<tr class='"+ cor +"'><td>" + nome
+                          + "</td><td>" + nasc
+                          + "</td><td>" + local + "</td></tr>";
+               
+                $("#tabela").append(linha);
+            });
+        });
+    </script>
+</body>
+</html>

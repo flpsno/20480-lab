@@ -1,0 +1,5 @@
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB11\SVG\bin\SVG.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB11\SVG\bin\SVG.pdb
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB11\SVG\obj\Debug\SVG.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB11\SVG\obj\Debug\SVG.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB11\SVG\obj\Debug\SVG.pdb

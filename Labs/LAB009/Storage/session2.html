@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1 id="tamanho"></h1>
+    <h1 id="nome"></h1>
+    <h1 id="cidade"></h1>
+    <h1 id="operadora"></h1>
+    <h1 id="media"></h1>
+
+    <script>
+        //var storage = sessionStorage.getItem("Cadastro");
+        var storage = localStorage.getItem("Cadastro");
+        var tamanho = localStorage.length;
+        var jCO = JSON.parse(storage);
+
+        document.getElementById("nome").innerHTML = jCO.Nome;
+        document.getElementById("cidade").innerHTML = jCO.Endereco.Cidade;
+        document.getElementById("operadora").innerHTML = jCO.Telefone[1].Operadora;
+        var media = (jCO.RendaFamiliar.Max + jCO.RendaFamiliar.Min) / 2;
+        document.getElementById("media").innerHTML = media;
+
+
+
+
+    </script>
+
+</body>
+</html>

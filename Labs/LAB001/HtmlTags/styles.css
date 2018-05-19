@@ -1,0 +1,28 @@
+﻿ h1, .h1 {
+            font-size:50px;
+            color: magenta;
+        }
+        
+        .classGenerica {
+             font-weight:bold;
+        }
+
+            .classGenerica.classMaiuscula {
+                text-transform: uppercase;
+            }
+
+.negrito {
+    font-weight: bold;
+    font-style: italic;
+
+}
+
+        #teste {
+            text-decoration:underline;
+        }
+
+p {
+color: #ffdf45;
+    font-size: 48px;
+    margin-left: 43px;
+}

@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <input type="file"  id="arquivos"/>
+    <pre id="notepad"></pre>
+    <div id="img"></div>
+    
+    <script>
+        var nomeArquivo = document.getElementById("arquivos");
+        var texto = document.getElementById("notepad");
+        var imagem = document.getElementById("img");
+
+        nomeArquivo.addEventListener('change', function (e) {
+            var arquivo = e.target.files[0];
+            var fr = new FileReader();
+
+            if (arquivo.type === 'text/plain') {
+                fr.onload = function (ev) {
+                    texto.innerText = ev.target.result;
+                }
+
+                fr.readAsText(arquivo);
+            } else {
+                var objImg = new Image();
+
+                fr.onload = function (ev) {
+                    objImg.src = ev.target.result;
+                    imagem.innerHTML = ev.target.result;
+                    imagem.appendChild(objImg);
+                }
+
+                fr.readAsDataURL(arquivo);
+            }
+
+
+        });
+
+    </script>
+</body>
+</html>

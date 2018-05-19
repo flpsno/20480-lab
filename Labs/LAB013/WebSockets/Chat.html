@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <input type="text" id="msg" />
+    <ul id="log">
+
+    </ul>
+    <script>
+        $(function () {
+            var ws = new WebSocket("ws://192.168.0.148:8181/");
+
+            ws.onopen = function (e) {
+                log("HENRIQUE ENTROU NA SALA");
+            }
+            ws.onclose = function (e) {
+                log("NEGO SAIU DA SALA");
+            }
+            ws.onmessage = function (e) {
+                log(e.data);
+            }
+            ws.onerror = function (e) {
+                log("ERROR:" + e.message);
+            }
+
+            $("#msg").keypress(function (e) {
+                if (e.which == 13) {
+                    ws.send("HENRIQUE: " + $(this).val());
+                    $(this).val('');
+                }
+            });
+
+            var log = function (msg) {
+                $("#log").append("<li>" + msg + "</li>");
+            }
+        });
+
+       
+
+    </script>
+</body>
+</html>

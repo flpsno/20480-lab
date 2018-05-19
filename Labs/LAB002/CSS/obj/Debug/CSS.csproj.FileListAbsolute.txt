@@ -1,0 +1,5 @@
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB002\CSS\bin\CSS.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB002\CSS\bin\CSS.pdb
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB002\CSS\obj\Debug\CSS.csprojResolveAssemblyReference.cache
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB002\CSS\obj\Debug\CSS.dll
+C:\Users\Admin\Documents\Visual Studio 2012\Projects\20480\LAB002\CSS\obj\Debug\CSS.pdb

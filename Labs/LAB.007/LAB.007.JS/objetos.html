@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        //var objetoMulher = {};
+        //objetoMulher.CorCabelo = "Loiro";
+        //objetoMulher.Altura = 1.65587;
+        //objetoMulher.Peso = "50kg";
+
+        var objetoMulher = {
+            CorCabelo: "Loiro",
+            Altura: 1.65587,
+            Peso: "50kg",
+        };
+
+        objetoMulher.Idade = 32;
+
+        //document.writeln(objetoMulher.Peso);
+
+        var jsonObj = JSON.stringify(objetoMulher);
+
+        document.writeln(jsonObj);
+
+        var objto2 = JSON.parse(jsonObj);
+
+        document.writeln(parseFloat(objto2.Altura).toFixed(2));
+
+    </script>
+</body>
+</html>

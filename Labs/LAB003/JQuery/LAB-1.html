@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        #tabela > tr:nth-child(even) {
+            background-color:gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="carro" />
+    <input type="button" id="incluir" />
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="tabela"  class="zebrado">
+            
+        </tbody>
+    </table>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#incluir").bind("click", function () {
+                if ($("#carro").val() == "")
+                {
+                    
+                    swal("error", "Campo vazio !", "error");
+                    return;
+                }
+                var carro = $("#carro").val();
+                var linha = "<tr ><td>" + carro
+                    + "</td><td onclick='Remover(this)'>Remove</tr>";
+                $(tabela).append(linha);
+                $("#carro").val(''); //limpar
+                $("#carro").focus(); // posicionar foco
+            });
+        });
+
+        function Remover(elemento) {
+            var texto = "Deseja Remover " + $(elemento).parent().children().first().html() + " ?";
+            if (confirm(texto)) {
+                $(elemento).parent().detach();
+            }
+        }
+
+    </script>
+
+</body>
+</html>

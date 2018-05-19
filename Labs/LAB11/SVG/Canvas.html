@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <canvas id="canvasArea" width="500" height="500"></canvas>
+    <script>
+        //Referencia Canvas
+        var canvas = document.getElementById("canvasArea");
+        var context = canvas.getContext('2d');
+
+        //Posicionamento
+        var horizontal = 0;
+        var vertical = 10;
+        var horizontal2 = 400;
+        var vertical2 = 0;
+        criarElemento();
+        criarElemento2();
+
+        document.addEventListener('keydown', function (evento) {
+            //W = 87
+            //A = 65
+            //S = 83
+            //D = 68
+            if (evento.keyCode == 87) {
+                vertical -= 5;
+                criarElemento();
+            }
+            else if (evento.keyCode == 83) {
+                vertical += 5;
+                criarElemento();
+            }
+
+            else if (evento.keyCode == 65) {
+                horizontal -= 5;
+                criarElemento();
+            }
+
+            else if (evento.keyCode == 68) {
+                horizontal += 5;
+                criarElemento();
+            }
+
+        });
+
+        function criarElemento() {
+            //context.clearRect(0, 0, canvas.width, canvas.height);
+            context.fillRect(horizontal, vertical, 20, 20);//(posical horizontal, posicao vertical, altura, largura)
+        }
+
+
+        function criarElemento2() {
+            
+            context.fillRect(horizontal2, vertical2, 20, 20);//(posical horizontal, posicao vertical, altura, largura)
+        }
+
+
+
+    </script>
+</body>
+</html>

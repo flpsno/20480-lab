@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        var pedido = function(email, sesionId) {
+            this.Email = email;
+            this.Id = sesionId;
+            this.Itens = [];
+           
+        }
+        pedido.prototype.cupon = function (numero) {
+            return "10%";
+        }
+
+
+        var pedidoNovo = new pedido("hsouza@gmail.com", 1);
+
+        pedidoNovo.cupon = 10;
+
+        pedidoNovo.Itens.push({
+            nome: "relogio MK Golden",
+            preco: 150,
+            cor: "dourado"
+        });
+        
+        pedidoNovo.Itens.push({
+            nome: "relogio palmeiras muldial",
+            preco: 50,
+            cor: "transaparente"
+        });
+        
+        var pedido2 = new pedido("hsouza@gmail.com", 2);
+        pedido2.Itens.push({
+            nome: "Addidas 42",
+            preco: 700,
+            cor: "branco"
+        });
+      
+        document.writeln(JSON.stringify(pedidoNovo));
+        document.writeln("<br><br>");
+        document.writeln(JSON.stringify(pedido2));
+        document.writeln("<br><br>");
+        var pedidoNovoDeNovo = pedidoNovo.constructor("teste@teste", 4);
+        document.writeln(JSON.stringify(pedidoNovo));
+
+
+    </script>
+</body>
+</html>

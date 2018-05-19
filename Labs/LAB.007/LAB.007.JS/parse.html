@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <script>
+        debugger;
+        var parses = {
+            int: function () {
+                alert(10 + parseInt("10"));
+            },
+
+            float: function () {
+                
+                alert(parseFloat(Math.PI + 0.76454654).toFixed(4));
+            }
+
+        }
+
+        parses.int();
+        parses.float();
+        alert(isNaN(10.1546546546));//false
+        alert(isNaN(parseInt("10")));//false
+        alert(isNaN(parseFloat(Math.PI + 0.76454654).toFixed(4)));//false
+        alert(isNaN("10"));//false
+    </script>
+</body>
+</html>

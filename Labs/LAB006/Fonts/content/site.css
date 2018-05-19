@@ -1,0 +1,82 @@
+﻿
+@font-face {
+    font-family: bigMac;
+    src: url(../fonts/mclawsui.ttf);
+}
+
+*:not(kbd .mc) {
+
+    color: blue!important;
+
+}
+
+body {
+    margin: 0px;
+}
+
+.mc {
+    font-family: "bigMac";
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+    font-size: 100px;
+    background-color: rgb(254,0,2);
+    color: rgb(255,204,0);
+    text-align: center;
+    text-shadow: 4px 2px 0 #000;
+}
+
+    .mc span {
+        position: absolute;
+        padding-top: 70px;
+        font-size: 15px;
+        margin-left: 5px;
+        text-shadow: none;
+    }
+
+.bola {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: blue;
+}
+
+.bordas {
+    height: 200px;
+    width: 200px;
+    border: 1px solid red;
+    text-align:center;
+    border-radius: 30px 0 30px 0 ; 
+}
+
+
+.degrade {
+    height: 200px;
+    width: 200px;
+}
+
+.degrade1 {
+    background: linear-gradient(to left, white, gray);
+    /*transform: rotate(90deg);*/
+}
+.degrade2 {
+    background: linear-gradient(to right, red, yellow, green, blue, violet, purple, magenta);
+}
+.degrade3 {
+    background: radial-gradient(green, blue, yellow, pink);
+    border-radius: 50%;
+}
+.degrade3:hover {
+    background: radial-gradient(red, yellow, green, blue, violet, purple, magenta);
+    border-radius: 50%;
+}
+
+
+.degrade4 {
+    background: linear-gradient(to left, white, gray);
+    transform: rotate(90deg);
+}
+
+
+
+

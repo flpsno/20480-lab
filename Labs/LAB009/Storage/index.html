@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html manifest="cache.html">
+<head>
+    <title></title>
+</head>
+<body>
+    <input type="button" onclick="cadastrar('TESTE');" value="cadastro" />
+
+    <ul id="nomes"></ul>
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script src="jsapp.js"></script>
+    <script>
+        var pessoas = localStorage.getItem("cad");
+
+        if (pessoas) {
+            $("#nomes").append("<li>" + pessoas + "</li>");
+        }
+
+    </script>
+</body>
+</html>

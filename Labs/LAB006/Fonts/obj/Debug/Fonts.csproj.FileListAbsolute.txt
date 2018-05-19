@@ -1,0 +1,5 @@
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB006\Fonts\bin\Fonts.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB006\Fonts\bin\Fonts.pdb
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB006\Fonts\obj\Debug\Fonts.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB006\Fonts\obj\Debug\Fonts.dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB006\Fonts\obj\Debug\Fonts.pdb

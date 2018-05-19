@@ -1,0 +1,5 @@
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB008\FileReader]\bin\FileReader].dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB008\FileReader]\bin\FileReader].pdb
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB008\FileReader]\obj\Debug\FileReader.csprojResolveAssemblyReference.cache
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB008\FileReader]\obj\Debug\FileReader].dll
+C:\Users\Student\Documents\Visual Studio 2012\Projects\LAB008\FileReader]\obj\Debug\FileReader].pdb
